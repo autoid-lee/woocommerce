@@ -1023,9 +1023,9 @@ class WC_API_Products extends WC_API_Resource {
 			$ids     = $data['upsell_ids'];
 
 			if ( ! empty( $ids ) ) {
-				foreach ( $ids as $id ) {
-					if ( $id && $id > 0 ) {
-						$upsells[] = $id;
+				foreach ( $ids as $upsell_id ) {
+					if ( $upsell_id && $upsell_id > 0 ) {
+						$upsells[] = $upsell_id;
 					}
 				}
 
@@ -1041,9 +1041,9 @@ class WC_API_Products extends WC_API_Resource {
 			$ids        = $data['cross_sell_ids'];
 
 			if ( ! empty( $ids ) ) {
-				foreach ( $ids as $id ) {
-					if ( $id && $id > 0 ) {
-						$crosssells[] = $id;
+				foreach ( $ids as $cross_sell_id ) {
+					if ( $cross_sell_id && $cross_sell_id > 0 ) {
+						$crosssells[] = $cross_sell_id;
 					}
 				}
 
